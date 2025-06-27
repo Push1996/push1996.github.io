@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,108 +6,148 @@
   <title>Po-Hsun Chang | Portfolio</title>
   <style>
     body {
-      font-family: sans-serif;
-      margin: 40px auto;
-      max-width: 900px;
-      padding: 0 20px;
-      background: #fdfdfd;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
       color: #333;
     }
-    h1, h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.3em;
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
-    a {
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .contact {
+      font-size: 0.95em;
+      color: #666;
+      margin-top: 10px;
+    }
+    .contact a {
       color: #0066cc;
       text-decoration: none;
     }
-    .project {
+    h2 {
+      font-size: 1.8em;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3em;
       margin-bottom: 30px;
     }
-    .contact {
-      margin-top: 40px;
+    .project {
+      background: #fff;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-4px);
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #004a99;
+    }
+    .project p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+    .project a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header style="text-align: left;">
+      <h1>Po-Hsun Chang</h1>
+      <p>Recent graduate from UNSW with a Master's in Information Technology (Database Systems). Passionate about data analytics, machine learning, and full-stack development.</p>
+      <div class="contact" style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; margin-top: 15px;">
+        📍 Sydney, Australia &nbsp;&nbsp; 📧 <a href="mailto:chris89019@gmail.com">chris89019@gmail.com</a>&nbsp;&nbsp; 🔗 <a href="https://linkedin.com/in/pohsunchang" target="_blank">LinkedIn: pohsunchang</a>
+      </div>
+    </header>
 
-  <h1>Po-Hsun Chang</h1>
-  <p>
-    Recent graduate from UNSW with a Master's in Information Technology (Database Systems).
-    Passionate about data analytics, machine learning, and full-stack development.
-  </p>
-  <p class="contact">
-    📍 Sydney, Australia <br/>
-    📧 <a href="mailto:chris89019@gmail.com">chris89019@gmail.com</a> <br/>
-    🔗 <a href="https://linkedin.com/in/pohsunchang" target="_blank">LinkedIn: pohsunchang</a>
-  </p>
+    <h2>Projects</h2>
 
-  <h2>Projects</h2>
+    <!-- Projects will be auto-inserted below -->
+    <div class="project">
+  <h3><a href="https://github.com/Push1996/nuovo-platform" target="_blank">E-Commerce Web Platform – Nuovo (09/2024 – 11/2024)</a></h3>
+  <p><strong>Overview</strong>: Led a 6-member agile team to deliver a shopping alert platform with real-time restock notifications. Flask backend with JWT-authenticated REST APIs, dynamic filtering, and a full-stack Dockerized app.</p>
+  <p><strong>Tech Stack</strong>: Next.js, Flask, MySQL, Docker, JWT</p>
+  <p><strong>Role</strong>: Scrum Master & Backend Developer — led sprint planning and development of backend REST APIs, notification engine, and admin dashboard.</p>
+  <p><a href="https://github.com/Push1996/nuovo-platform" target="_blank">→ View on GitHub</a></p>
+</div>
 
-  <div class="project">
-    <h3><a href="https://github.com/Push1996/nuovo-platform" target="_blank">E-Commerce Web Platform - Nuovo (2024)</a></h3>
-    <p><strong>Project Overview:</strong> Led a 6-member agile team to deliver a shopping alert platform with real-time restock notifications. Flask backend with JWT-authenticated REST APIs, dynamic filtering, and a full-stack Dockerized app.</p>
-    <p><strong>Technologies:</strong> Next.js, Flask, MySQL, Docker, JWT</p>
-    <p><strong>My Role:</strong> Scrum Master & Backend Developer — led sprint planning and development of backend REST APIs, notification engine, and admin dashboard.</p>
-    <p><a href="https://github.com/Push1996/nuovo-platform" target="_blank"><strong>→ View source code and report on GitHub</strong></a></p>
+<div class="project">
+  <h3><a href="https://github.com/Push1996/search-engine-nltk" target="_blank">Search Engine with Positional Indexing (09/2024 – 11/2024)</a></h3>
+  <p><strong>Overview</strong>: Built a search engine using Python and NLTK, supporting positional inverted indexing, phrase queries, and ranked retrieval with proximity scoring.</p>
+  <p><strong>Tech Stack</strong>: Python, NLTK, Inverted Index, Edit Distance, CLI</p>
+  <p><strong>Role</strong>: IR System Developer — implemented tokenizer, indexer, ranked search, spelling correction, and sentence display functions using only the Python Standard Library and NLTK.</p>
+  <p><a href="https://github.com/Push1996/search-engine-nltk" target="_blank">→ View on GitHub</a></p>
+</div>
+
+<div class="project">
+  <h3><a href="https://github.com/Push1996/autonomous-driving-segmentation" target="_blank">Autonomous Driving Semantic Segmentation (06/2024 – 08/2024)</a></h3>
+  <p><strong>Overview</strong>: Semantic segmentation of natural driving scenes using a ResNet-based model trained on a subset of the WildScenes dataset.</p>
+  <p><strong>Tech Stack</strong>: PyTorch, ResNet, Dice Loss, Cross Entropy, Semantic Segmentation</p>
+  <p><strong>Role</strong>: Vision Engineer — handled data preprocessing, label analysis, model training, and visualization. Achieved strong mIoU results using custom training pipelines.</p>
+  <p><a href="https://github.com/Push1996/autonomous-driving-segmentation" target="_blank">→ View on GitHub</a></p>
+</div>
+
+<div class="project">
+  <h3><a href="https://github.com/Push1996/badminton-motion-ml" target="_blank">Badminton Motion Classification using IMU + ML (06/2024 – 08/2024)</a></h3>
+  <p><strong>Overview</strong>: End-to-end pipeline to classify 7 types of badminton swings using IMU sensor data. Included Bluetooth data collection, segmentation, GUI, and model deployment.</p>
+  <p><strong>Tech Stack</strong>: Python, Random Forest, GUI (Tkinter), BLE (Bluetooth Low Energy), Data Preprocessing</p>
+  <p><strong>Role</strong>: ML Pipeline Developer — implemented data acquisition, peak detection, feature engineering, training, and GUI integration. Achieved 97.1% classification accuracy.</p>
+  <p><a href="https://github.com/Push1996/badminton-motion-ml" target="_blank">→ View on GitHub</a></p>
+</div>
+
+<div class="project">
+  <h3><a href="https://github.com/Push1996/fashion-multitask-cnn" target="_blank">Fashion Item Classification with Multi-Task CNN (06/2024 – 08/2024)</a></h3>
+  <p><strong>Overview</strong>: Multi-task CNN model (ResNet34, VGG16) to classify fashion images into main and subcategories simultaneously.</p>
+  <p><strong>Tech Stack</strong>: PyTorch, CNN, Multi-task Learning, Transfer Learning</p>
+  <p><strong>Role</strong>: Deep Learning Engineer — developed models, tuned training pipelines, and conducted performance evaluation.</p>
+  <p><a href="https://github.com/Push1996/fashion-multitask-cnn" target="_blank">→ View on GitHub</a></p>
+</div>
+
+<div class="project">
+  <h3><a href="https://github.com/Push1996/react-slide-app" target="_blank">React-based Web Application – Slide Deck Creator (02/2024 – 04/2024)</a></h3>
+  <p><strong>Overview</strong>: Individual coursework to build a React single-page application for creating slide decks, based on a detailed project spec.</p>
+  <p><strong>Tech Stack</strong>: React.js, JavaScript, HTML/CSS, LocalStorage</p>
+  <p><strong>Role</strong>: Sole developer – implemented dynamic slide creation, live previews, theming, and markdown support.</p>
+  <p>Progress: Fully implemented individual mode, markdown preview, editor, slide mode toggle, theme switching. Pair programming and PDF export features were not included due to solo development constraints.</p>
+  <p><a href="https://github.com/Push1996/react-slide-app" target="_blank">→ View on GitHub</a></p>
+</div>
+
+<div class="project">
+  <h3><a href="https://github.com/Push1996/insurance-prediction-ml" target="_blank">Car Insurance Prediction using ML (02/2024 – 04/2024)</a></h3>
+  <p><strong>Overview</strong>: Built regression and classification models to predict policyholder age and accident claim likelihood based on anonymized datasets.</p>
+  <p><strong>Tech Stack</strong>: Python, Random Forest, XGBoost, Imbalanced-learn, Scikit-learn</p>
+  <p><strong>Role</strong>: Machine Learning Engineer — implemented feature engineering, ensemble methods, and evaluation pipelines for both regression and classification.</p>
+  <p><a href="https://github.com/Push1996/insurance-prediction-ml" target="_blank">→ View on GitHub</a></p>
+</div>
+
+<div class="project">
+  <h3><a href="https://github.com/Push1996/pyspark-set-similarity" target="_blank">Set Similarity Search with PySpark (09/2023 – 11/2023)</a></h3>
+  <p><strong>Overview</strong>: Scalable PySpark solution to identify high-similarity itemsets across transaction datasets.</p>
+  <p><strong>Tech Stack</strong>: PySpark, Jaccard Similarity, Prefix Filtering, Big Data Processing</p>
+  <p><strong>Role</strong>: Big Data Developer, Spark Optimizer</p>
+  <p><a href="https://github.com/Push1996/pyspark-set-similarity" target="_blank">→ View on GitHub</a></p>
+</div>
+
   </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/Push1996/search-engine-nltk" target="_blank">Search Engine with Positional Indexing (2024)</a></h3>
-    <p><strong>Project Overview:</strong> Built a search engine using Python and NLTK, supporting positional inverted indexing, phrase queries, and ranked retrieval with proximity scoring.</p>
-    <p><strong>Technologies:</strong> Python, NLTK, Inverted Index, Edit Distance, CLI</p>
-    <p><strong>My Role:</strong> IR System Developer — implemented tokenizer, indexer, ranked search, spelling correction, and sentence display functions using only the Python Standard Library and NLTK.</p>
-    <p><a href="https://github.com/Push1996/search-engine-nltk" target="_blank"><strong>→ View source code and report on GitHub</strong></a></p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/Push1996/autonomous-driving-segmentation" target="_blank">Autonomous Driving Semantic Segmentation (2024)</a></h3>
-    <p><strong>Project Overview:</strong> Semantic segmentation of natural driving scenes using a ResNet-based model trained on a subset of the WildScenes dataset.</p>
-    <p><strong>Technologies:</strong> PyTorch, ResNet, Dice Loss, Cross Entropy, Semantic Segmentation</p>
-    <p><strong>My Role:</strong> Vision Engineer — handled data preprocessing, label analysis, model training, and visualization. Achieved strong mIoU results using custom training pipelines.</p>
-    <p><a href="https://github.com/Push1996/autonomous-driving-segmentation" target="_blank"><strong>→ View notebooks, utilities, and report on GitHub</strong></a></p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/Push1996/badminton-motion-ml" target="_blank">Badminton Motion Classification using IMU + ML (2024)</a></h3>
-    <p><strong>Project Overview:</strong> End-to-end pipeline to classify 7 types of badminton swings using IMU sensor data. Included Bluetooth data collection, segmentation, GUI, and model deployment.</p>
-    <p><strong>Technologies:</strong> Python, Random Forest, GUI (Tkinter), BLE (Bluetooth Low Energy), Data Preprocessing</p>
-    <p><strong>My Role:</strong> ML Pipeline Developer — implemented data acquisition, peak detection, feature engineering, training, and GUI integration. Achieved 97.1% classification accuracy.</p>
-    <p><a href="https://github.com/Push1996/badminton-motion-ml" target="_blank"><strong>→ View project repository on GitHub</strong></a></p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/Push1996/fashion-multitask-cnn" target="_blank">Fashion Item Classification with Multi-Task CNN (2024)</a></h3>
-    <p><strong>Project Overview:</strong> Multi-task CNN model (ResNet34, VGG16) to classify fashion images into main and subcategories simultaneously.</p>
-    <p><strong>Technologies:</strong> PyTorch, CNN, Multi-task Learning, Transfer Learning</p>
-    <p><strong>My Role:</strong> Deep Learning Engineer — developed models, tuned training pipelines, and conducted performance evaluation.</p>
-    <p><a href="https://github.com/Push1996/fashion-multitask-cnn" target="_blank"><strong>→ View code, notebooks, and report on GitHub</strong></a></p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/Push1996/react-slide-app" target="_blank">React-based Web Application – Slide Deck Creator (2024)</a></h3>
-    <p><strong>Project Overview:</strong> Individual coursework to build a React single-page application for creating slide decks, based on a detailed project spec.</p>
-    <p><strong>Technologies:</strong> React.js, JavaScript, HTML/CSS, LocalStorage</p>
-    <p><strong>My Role:</strong> Sole developer – implemented dynamic slide creation, live previews, theming, and markdown support.</p>
-    <p><strong>Progress:</strong> Fully implemented individual mode, markdown preview, editor, slide mode toggle, theme switching. Pair programming and PDF export features were not included due to solo development constraints.</p>
-    <p><a href="https://github.com/Push1996/react-slide-app" target="_blank"><strong>→ View project and progress on GitHub</strong></a></p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/Push1996/insurance-prediction-ml" target="_blank">Car Insurance Prediction using ML (2024)</a></h3>
-    <p><strong>Project Overview:</strong> Built regression and classification models to predict policyholder age and accident claim likelihood based on anonymized datasets.</p>
-    <p><strong>Technologies:</strong> Python, Random Forest, XGBoost, Imbalanced-learn, Scikit-learn</p>
-    <p><strong>My Role:</strong> Machine Learning Engineer — implemented feature engineering, ensemble methods, and evaluation pipelines for both regression and classification.</p>
-    <p><a href="https://github.com/Push1996/insurance-prediction-ml" target="_blank"><strong>→ View full code, notebook, and report on GitHub</strong></a></p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/Push1996/pyspark-set-similarity" target="_blank">Set Similarity Search with PySpark (2023)</a></h3>
-    <p><strong>Project Overview:</strong> Scalable PySpark solution to identify high-similarity itemsets across transaction datasets.</p>
-    <p><strong>Technologies:</strong> PySpark, Jaccard Similarity, Prefix Filtering, Big Data Processing</p>
-    <p><strong>My Role:</strong> Big Data Developer, Spark Optimizer</p>
-    <p><a href="https://github.com/Push1996/pyspark-set-similarity" target="_blank"><strong>→ View full code and report on GitHub</strong></a></p>
-  </div>
-
 </body>
 </html>
